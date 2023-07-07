@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edible or Non-Edible?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Edible or Non-Edible?</h1>
+        <p id="score">Score: 0</p>
+        <img style="display: none;" id="correctImage" src="Images/correct.png" alt="correctImage" width="200px" height="200px">
+        <img style="display: none;" id="incorrectImage" src="Images/Incorrect.jpg" alt="incorrectImage" width="200px" height="200px">
+        <div id="game">
+            <img id="item" src="" alt="images" width="300px" height="300px">
+            <div id="options">
+                <button id="edible" onclick="handleAnswer(true)">Edible</button>
+                <button id="non-edible" onclick="handleAnswer(false)">Non-Edible</button>
+            </div>
+        </div>
+        <p id="timer"> Time Left: 30 seconds </p>
+        <button id="start" onclick="startGame()">Start Game</button>
+        <button id="new-btn" style="display: none;" onclick="startGame()">New Game</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
